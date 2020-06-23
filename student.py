@@ -1,10 +1,9 @@
-from cohort import Cohort
+#from cohort import Cohort
+from NSSPerson import NSSPerson
 
 
-class Student:
-    def __init__(self, first_name, last_name, slack):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.slack_handle = slack
-        self.exercises = []
-        self.cohort = Cohort
+class Student(NSSPerson):
+    def __init__(self, first, last, slack):
+        super(Student, self).__init__(first, last, slack)
+
+        self.exercises = list()

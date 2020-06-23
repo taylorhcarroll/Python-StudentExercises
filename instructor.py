@@ -1,10 +1,10 @@
-class Instructor:
-    def __init__(self, first_name, last_name, slack, specialty):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.slack_handle = slack
-        self.exercise = []
+from NSSPerson import NSSPerson
+
+
+class Instructor(NSSPerson):
+    def __init__(self, first, last, slack, specialty):
         self.specialty = specialty
+        super(Instructor, self).__init__(first, last, slack)
 
     def assign_exercise(self, student, exercise):
         student.exercises.append(exercise)

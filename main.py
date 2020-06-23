@@ -13,10 +13,12 @@ cohort36 = Cohort("Day Cohort 36")
 cohort37 = Cohort("Day Cohort 37")
 cohort38 = Cohort("Day Cohort 38")
 
+
 student1 = Student("Taylor", "Carroll", "taylorhc")
 student2 = Student("Sage", "Klein", "sagey")
 student3 = Student("Keith", "Potempa", "kpotempa")
 student4 = Student("Nate", "Vogel", "nvogel")
+
 
 mo = Instructor("mo", "mo", "itsmo", "Backend C#")
 madi = Instructor("Madi", "Pepper", "peppers", "Beat Saber")
@@ -28,13 +30,13 @@ mo.assign_exercise(student2, bangazon)
 mo.assign_exercise(student3, trestlebridge)
 mo.assign_exercise(student4, trestlebridge)
 
-students = []
+students = list()
 students.append(student1)
 students.append(student2)
 students.append(student3)
 students.append(student4)
 
-exercises = []
+exercises = list()
 exercises.append(nutshell)
 exercises.append(reactnutshell)
 exercises.append(bangazon)
